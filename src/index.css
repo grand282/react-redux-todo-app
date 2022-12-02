@@ -1,13 +1,100 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #edf5d183;
+  padding: 0px;
+  margin: 0px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app{
+  text-align: center;
+  background-color: white;
+  height: auto;
+  min-height: 100vh;
+  width: 40%;
+  margin: auto;
+  padding: 30px;
+  box-shadow: 2px 2px 20px #ececec;
+}
+
+.app-title{
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.app-todo{
+  margin: 30px 0px;
+}
+
+.app-title{
+  width: 100%;
+  background-color: #ac3b61;
+  color: white;
+  font-weight: 700;
+}
+
+.task-item div{
+  
+  font-weight: 600;
+}
+
+.task-input{
+  height: 45px;
+  width: 75%;
+  border: 1px solid #e4f2f7;
+  border-radius: 6px;
+  padding: 2px 10px;
+  margin-right: 10px;
+}
+
+.task-input:focus{
+  height: 49px;
+  width: 70%;
+  border: none;
+  border-radius: 6px;
+  background-color: whitesmoke;
+  color: black;
+  font-weight: bold;
+}
+
+.task-button{
+  background-color: #ac3b61;
+  color: white;
+  font-weight: 700;
+}
+
+.task-button:hover{
+  cursor: pointer;
+}
+
+.task-list{
+  list-style: none;
+  margin: auto;
+  padding: 0px;
+}
+
+.task-item{
+  margin: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 40px;
+}
+
+.remove-task-button{
+  background-color: #ac3b61;
+  height: 32px;
+  color: white;
+  border-radius: 4px;
+  width: 70px;
+  border: none;
+}
+
+.remove-task-button:hover{
+  cursor: pointer;
+}
+
+@media (max-width: 320px){
+.task-input{
+  width: 50%;
+}
 }
